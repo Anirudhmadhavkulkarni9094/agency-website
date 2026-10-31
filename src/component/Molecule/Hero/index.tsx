@@ -86,11 +86,11 @@ function Dashboard() {
               {dashboard.stream.events.map((event) => (
                 <div
                   key={event.time}
-                  className="whitespace-nowrap text-[9px] text-[#444]"
+                  className="grid min-w-0 grid-cols-[auto_auto_minmax(0,1fr)] items-start gap-x-1 text-[9px] text-[#444]"
                 >
                   <span className="text-gray-400">{event.time}</span>{" "}
                   <strong className="text-black">{event.type}</strong>{" "}
-                  {event.message}
+                  <span className="break-words">{event.message}</span>
                 </div>
               ))}
             </div>
@@ -110,7 +110,7 @@ function Dashboard() {
       {/* Dashboard Footer */}
       <div className="flex flex-wrap justify-between gap-2 border-t border-[#e3e1dc] bg-[#f1f0ed] px-3 py-2 text-[8px] text-gray-600 sm:px-4">
         <span>{dashboard.gitHashLabel} {dashboard.gitHash}</span>
-        <span>{dashboard.environment}</span>
+        <span className="min-w-0 break-words">{dashboard.environment}</span>
       </div>
     </div>
   );
@@ -122,7 +122,7 @@ export default function Hero() {
   return (
     <section
       aria-labelledby="home-title"
-      className="p-20 overflow-hidden bg-[#faf9f6] lg:flex lg:items-center lg:gap-[4%]"
+      className="overflow-hidden bg-[#faf9f6] px-5 py-12 sm:px-10 sm:py-16 lg:flex lg:items-center lg:gap-[4%] lg:p-20"
     >
 
       {/* Left Hero */}
@@ -133,7 +133,7 @@ export default function Hero() {
           {content.hero.eyebrow}
         </div>
 
-        <h1 id="home-title" className="font-serif text-[clamp(3rem,6.35vw,5.5rem)] font-normal leading-[1.04] tracking-[-0.055em] text-black">
+        <h1 id="home-title" className="font-serif text-[clamp(2.5rem,10vw,5.5rem)] font-normal leading-[1.04] tracking-[-0.055em] text-black sm:text-[clamp(3rem,6.35vw,5.5rem)]">
           {content.hero.titleLines.map((line, index) => (
             <Fragment key={line}>
               {index > 0 && <br />}

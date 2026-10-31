@@ -55,7 +55,7 @@ export default function Contact() {
     "& .MuiOutlinedInput-root": {
       borderRadius: 0,
       backgroundColor: "#f5f4f1",
-      fontSize: "11px",
+      fontSize: { xs: "16px", sm: "11px" },
       "& fieldset": {
         borderColor: "#e5e3df",
       },
@@ -138,7 +138,7 @@ export default function Contact() {
             titleSx={{
               maxWidth: 430,
               fontFamily: "'Playfair Display', Georgia, serif",
-              fontSize: { xs: "43px", sm: "48px", lg: "50px" },
+              fontSize: { xs: "36px", sm: "48px", lg: "50px" },
               fontWeight: 400,
               lineHeight: 1.12,
               letterSpacing: "-1.8px",
@@ -310,11 +310,11 @@ export default function Contact() {
                   margin: 0,
                 },
                 "& .MuiToggleButton-root": {
-                  minHeight: 27,
-                  px: 0.5,
+                  minHeight: { xs: 44, sm: 32 },
+                  px: { xs: 1, sm: 0.5 },
                   py: 0.5,
                   justifyContent: "flex-start",
-                  fontSize: "8px",
+                  fontSize: { xs: "10px", sm: "8px" },
                   fontWeight: 600,
                   letterSpacing: "0.1px",
                   color: "#222",
@@ -374,10 +374,10 @@ export default function Contact() {
                   margin: 0,
                 },
                 "& .MuiToggleButton-root": {
-                  minHeight: 32,
-                  px: 0.5,
+                  minHeight: { xs: 44, sm: 32 },
+                  px: { xs: 1, sm: 0.5 },
                   py: 0.5,
-                  fontSize: "9px",
+                  fontSize: { xs: "10px", sm: "9px" },
                   color: "#333",
                   backgroundColor: "#f5f4f1",
                   "&.Mui-selected": {
@@ -422,7 +422,7 @@ export default function Contact() {
                 ...fieldSx,
                 "& .MuiInputBase-input": {
                   padding: "10px 12px",
-                  fontSize: "11px",
+                  fontSize: { xs: "16px", sm: "11px" },
                   lineHeight: 1.7,
                 },
               }}
@@ -436,7 +436,7 @@ export default function Contact() {
             variant="contained"
             disableElevation
             sx={{
-              minHeight: 36,
+              minHeight: { xs: 44, sm: 36 },
               borderRadius: 0,
               backgroundColor: "#080808",
               color: "#fff",

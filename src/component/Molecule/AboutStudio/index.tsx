@@ -38,7 +38,7 @@ export default function AboutStudio() {
             titleSx={{
               maxWidth: "390px",
               fontFamily: "'Playfair Display', Georgia, serif",
-              fontSize: { xs: "42px", sm: "46px", lg: "48px" },
+              fontSize: { xs: "36px", sm: "46px", lg: "48px" },
               fontWeight: 400,
               lineHeight: 1.12,
               letterSpacing: "-1.8px",

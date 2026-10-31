@@ -39,7 +39,7 @@ export default function Partnership() {
           titleSx={{
             maxWidth: "450px",
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: { xs: "38px", sm: "42px", lg: "44px" },
+            fontSize: { xs: "34px", sm: "42px", lg: "44px" },
             fontWeight: 400,
             lineHeight: 1.05,
             letterSpacing: "-1.5px",
