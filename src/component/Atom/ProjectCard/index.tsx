@@ -1,5 +1,6 @@
 import { ArrowOutward } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
+import Image from "next/image";
 import content from "@/data/content.json";
 
 type Project = (typeof content.selectedWork.projects)[number];
@@ -53,20 +54,18 @@ export default function ProjectCard({ project }: { project: Project }) {
             aspectRatio: "16 / 9",
             overflow: "hidden",
             backgroundColor: "#e8e7e3",
+            "&:hover img": { transform: "scale(1.035)" },
           }}
         >
-          <Box
-            component="img"
+          <Image
             src={project.image}
             alt={project.imageAlt}
-            sx={{
-              width: "100%",
-              height: "100%",
-              display: "block",
+            fill
+            sizes="(max-width: 599px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            style={{
               objectFit: "cover",
               filter: "grayscale(100%)",
               transition: "transform 400ms ease",
-              "&:hover": { transform: "scale(1.035)" },
             }}
           />
 

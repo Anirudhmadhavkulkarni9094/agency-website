@@ -18,6 +18,7 @@ import content from "@/data/content.json";
 export default function Contact() {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [selectedBudget, setSelectedBudget] = useState(content.contact.defaultBudget);
+  const [submissionMessage, setSubmissionMessage] = useState("");
   const { intro, fields } = content.contact;
   const [form, setForm] = useState({
     name: "",
@@ -45,16 +46,9 @@ export default function Contact() {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    const inquiry = {
-      ...form,
-      services: selectedServices,
-      budget: selectedBudget,
-    };
-
-    console.log("Project inquiry:", inquiry);
-
-    // Connect your backend or email service here.
+    setSubmissionMessage(
+      `This form is not connected yet. Please email ${content.contact.email} to send your inquiry.`,
+    );
   };
 
   const fieldSx = {
@@ -457,7 +451,22 @@ export default function Contact() {
             {content.contact.submitLabel}
           </Button>
 
-          {/* Privacy Note */}
+          {submissionMessage && (
+            <Typography
+              role="status"
+              aria-live="polite"
+              sx={{
+                mt: 1.5,
+                textAlign: "center",
+                fontSize: "10px",
+                lineHeight: 1.6,
+                color: "#8a2c2c",
+              }}
+            >
+              {submissionMessage}
+            </Typography>
+          )}
+
           <Typography
             sx={{
               mt: 1,
@@ -467,7 +476,7 @@ export default function Contact() {
               color: "#666",
             }}
           >
-            {content.contact.privacyNote}
+            {content.contact.deliveryNote}
           </Typography>
         </Box>
       </Box>

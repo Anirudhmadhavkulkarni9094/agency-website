@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Agency Landing Page",
-    "description": "A modern agency landing page built with Next.js, React, and Material-UI. Showcasing services, selected work, and a contact form for inquiries."
+    "title": "Website Design & Development Agency | Studio / Digital",
+    "description": "Website design, redesign, and development for small businesses and startups. We also build landing pages, SaaS products, and custom software."
   },
   "navigation": {
     "logo": "/Link.svg",
-    "logoAlt": "Logo",
+    "logoAlt": "Studio / Digital",
     "links": [
-      { "label": "SERVICES", "href": "/" },
-      { "label": "WORK", "href": "/" },
-      { "label": "APPROACH", "href": "/" },
-      { "label": "ABOUT", "href": "/" }
+      { "label": "SERVICES", "href": "#services" },
+      { "label": "WORK", "href": "#work" },
+      { "label": "APPROACH", "href": "#process" },
+      { "label": "ABOUT", "href": "#about" }
     ],
     "contact": {
       "label": "LET'S TALK"
@@ -26,10 +26,10 @@
         "number": "01",
         "title": "SERVICES",
         "links": [
-          { "label": "Product Engineering", "href": "#services" },
-          { "label": "Design Systems", "href": "#services" },
-          { "label": "Architectural Audit", "href": "#services" },
-          { "label": "Cloud Infrastructure", "href": "#services" }
+          { "label": "Websites & Landing Pages", "href": "#services" },
+          { "label": "MVP & Product Development", "href": "#services" },
+          { "label": "Custom Business Software", "href": "#services" },
+          { "label": "AI & Workflow Automation", "href": "#services" }
         ]
       },
       {
@@ -44,12 +44,8 @@
       },
       {
         "number": "03",
-        "title": "LEGAL",
-        "links": [
-          { "label": "Privacy Policy", "href": "/privacy" },
-          { "label": "Terms of Service", "href": "/terms" },
-          { "label": "Code of Ethics", "href": "/ethics" }
-        ],
+        "title": "LOCATION",
+        "links": [],
         "location": "Bengaluru · India"
       }
     ],
@@ -58,7 +54,7 @@
   },
   "hero": {
     "eyebrow": "INDEPENDENT DIGITAL ENGINEERING STUDIO",
-    "titleLines": ["Your digital", "presence. Built to", "do more."],
+    "titleLines": ["Websites and", "digital products.", "Built to do more."],
     "description": "We design, build, and manage the websites, products, and systems that help ambitious businesses move forward.",
     "actions": [
       { "label": "START A PROJECT", "href": "#contact", "type": "primary" },
@@ -68,7 +64,7 @@
     "dashboard": {
       "browserDots": 3,
       "address": "studio-digital://core-platform/v2.4",
-      "productionStatus": "PRODUCTION",
+      "productionStatus": "SAMPLE DATA",
       "metrics": [
         { "label": "SYSTEM AVAILABILITY", "value": "99.98%", "status": "HEALTHY" },
         { "label": "API LATENCY", "value": "28ms", "suffix": "P99" },
@@ -96,7 +92,7 @@
       },
       "gitHash": "9fa08e7",
       "gitHashLabel": "GIT HASH:",
-      "environment": "ENVIRONMENT: AWS US-EAST-1 · REDUNDANCY 3X"
+      "environment": "ILLUSTRATIVE DASHBOARD — NOT CLIENT PERFORMANCE DATA"
     }
   },
   "philosophy": {
@@ -218,7 +214,7 @@
       "description": "Explore examples of the digital experiences and engineered systems we design and deliver for growth-stage businesses."
     },
     "labels": {
-      "viewProject": "VIEW PROJECT",
+      "viewProject": "DISCUSS A SIMILAR PROJECT",
       "viewAll": "VIEW ALL WORK & INQUIRE"
     },
     "viewAllHref": "#contact",
@@ -226,35 +222,35 @@
       {
         "number": "01",
         "category": "WEB DESIGN · DEVELOPMENT",
-        "type": "CASE STUDY",
+        "type": "CONCEPT DEMO",
         "name": "Verve Advisory",
         "description": "A modern web platform for a boutique advisory consultancy. Designed to clarify premium positioning and drive conversion.",
         "deliverable": "HIGH-CONVERSION CMS",
         "image": "/images/projects/verve-advisory.jpg",
         "imageAlt": "Verve Advisory website preview",
-        "href": "#verve-advisory"
+        "href": "#contact"
       },
       {
         "number": "02",
         "category": "PRODUCT DESIGN · ENGINEERING",
-        "type": "CASE STUDY",
+        "type": "CONCEPT DEMO",
         "name": "PulseDesk SaaS",
         "description": "An operations management application designed around rapid response workflows and clear customer visibility.",
         "deliverable": "WEB APP & API LAYER",
         "image": "/images/projects/pulsedesk.jpg",
         "imageAlt": "PulseDesk SaaS dashboard preview",
-        "href": "#pulsedesk"
+        "href": "#contact"
       },
       {
         "number": "03",
         "category": "CUSTOM SOFTWARE · AUTOMATION",
-        "type": "CASE STUDY",
+        "type": "CONCEPT DEMO",
         "name": "Kinetic Ops",
         "description": "An integrated internal scheduling tool replacing fragmented spreadsheets with real-time operational dispatching.",
         "deliverable": "CUSTOM ERP MODULE",
         "image": "/images/projects/kinetic-ops.jpg",
         "imageAlt": "Kinetic Ops scheduling software preview",
-        "href": "#kinetic-ops"
+        "href": "#contact"
       }
     ]
   },
@@ -464,6 +460,6 @@
     "budgets": ["$500 – $2,500", "$2,500 – $5,000", "$5,000 – $10k+", "To be discussed"],
     "defaultBudget": "$5,000 – $10k+",
     "submitLabel": "SEND PROJECT INQUIRY",
-    "privacyNote": "Your details will only be used to respond directly to this project inquiry. We respect your privacy."
+    "deliveryNote": "Form delivery is not configured yet. Please use the contact email to send your inquiry."
   }
 }

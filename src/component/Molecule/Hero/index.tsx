@@ -51,9 +51,9 @@ function Dashboard() {
               {dashboard.architecture.eyebrow}
             </p>
 
-            <h3 className="mb-2 text-lg font-medium leading-snug tracking-tight sm:text-xl">
+            <h2 className="mb-2 text-lg font-medium leading-snug tracking-tight sm:text-xl">
               {dashboard.architecture.title}
-            </h3>
+            </h2>
 
             <p className="text-xs leading-relaxed text-[#525252]">
               {dashboard.architecture.description}
@@ -120,17 +120,20 @@ export default function Hero() {
   const [primaryAction, secondaryAction] = content.hero.actions;
 
   return (
-    <main className="p-20 overflow-hidden bg-[#faf9f6] lg:flex lg:items-center lg:gap-[4%]">
+    <section
+      aria-labelledby="home-title"
+      className="p-20 overflow-hidden bg-[#faf9f6] lg:flex lg:items-center lg:gap-[4%]"
+    >
 
       {/* Left Hero */}
-      <section className="w-full lg:w-1/2">
+      <div className="w-full lg:w-1/2">
 
         <div className="mb-3 flex items-center gap-2 text-[9px] font-bold tracking-[1.15px] text-[#383838]">
           <span className="h-2 w-2 rounded-full bg-[#234bff]" />
           {content.hero.eyebrow}
         </div>
 
-        <h1 className="font-serif text-[clamp(3rem,6.35vw,5.5rem)] font-normal leading-[1.04] tracking-[-0.055em] text-black">
+        <h1 id="home-title" className="font-serif text-[clamp(3rem,6.35vw,5.5rem)] font-normal leading-[1.04] tracking-[-0.055em] text-black">
           {content.hero.titleLines.map((line, index) => (
             <Fragment key={line}>
               {index > 0 && <br />}
@@ -176,12 +179,12 @@ export default function Hero() {
             </Fragment>
           ))}
         </div>
-      </section>
+      </div>
 
       {/* Right Dashboard */}
-      <section className="mt-10 flex w-full items-center lg:mt-0 lg:w-1/2">
+      <div className="mt-10 flex w-full items-center lg:mt-0 lg:w-1/2">
         <Dashboard />
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }

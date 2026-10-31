@@ -11,17 +11,19 @@ import Services from "@/component/Molecule/WhatWeDo";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Hero />
-      <Philosophy />
-      <Services />
-      <SelectedWork />
-      <Partnership />
-      <HowWeWork />
-      <EngagementModels />
-      <AboutStudio />
-      <Contact />
-    </div>
+      <main>
+        <Hero />
+        <Philosophy />
+        <Services />
+        <SelectedWork />
+        <Partnership />
+        <HowWeWork />
+        <EngagementModels />
+        <AboutStudio />
+        <Contact />
+      </main>
+    </>
   );
 }
