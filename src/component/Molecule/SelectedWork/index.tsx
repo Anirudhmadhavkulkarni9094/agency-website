@@ -3,9 +3,10 @@ import { Box, Button } from "@mui/material";
 import IntroCard from "@/component/Atom/IntroCard";
 import ProjectCard from "@/component/Atom/ProjectCard";
 import content from "@/data/content.json";
+import { projects } from "@/data/projects";
 
 export default function SelectedWork() {
-  const { intro, projects, labels, viewAllHref } = content.selectedWork;
+  const { intro } = content.selectedWork;
 
   return (
     <Box
@@ -67,7 +68,7 @@ export default function SelectedWork() {
         <Button
           variant="outlined"
           endIcon={<ArrowForward />}
-          href={viewAllHref}
+          href="#contact"
           sx={{
             borderRadius: 0,
             borderColor: "#888",
@@ -84,7 +85,7 @@ export default function SelectedWork() {
             },
           }}
         >
-          {labels.viewAll}
+          DISCUSS A SIMILAR PROJECT
         </Button>
       </Box>
     </Box>

@@ -14,14 +14,14 @@ function Navbar() {
 
   return (
     <header className="relative z-20 flex flex-wrap items-center justify-between gap-3 bg-[#faf9f6] px-5 py-3.5 sm:px-10 sm:py-4 lg:px-20 lg:py-5">
-      <Link href="/" aria-label="Studio / Digital home" className="shrink-0">
+      <Link href="/" aria-label="Webcrafty.tech home" className="shrink-0">
         <Image
           src={content.navigation.logo}
           alt={content.navigation.logoAlt}
-          width={178}
+          width={146}
           height={26}
           priority
-          className="h-auto w-[150px] sm:w-[178px]"
+          className="h-auto w-[135px] sm:w-[146px]"
         />
       </Link>
 
@@ -37,12 +37,16 @@ function Navbar() {
 
       <nav aria-label="Main navigation" className="hidden items-center gap-8 xl:gap-10 lg:flex">
         {content.navigation.links.map((link) => (
-          <NavLink key={link.label} href={link.href} label={link.label} />
+          <NavLink
+            key={link.label}
+            href={link.href.startsWith("#") ? `/${link.href}` : link.href}
+            label={link.label}
+          />
         ))}
       </nav>
 
       <div className="hidden lg:block">
-        <CustomButton variant="contained">
+        <CustomButton variant="contained" href="/#contact">
           {content.navigation.contact.label}
         </CustomButton>
       </div>
@@ -55,7 +59,7 @@ function Navbar() {
         {content.navigation.links.map((link) => (
           <NavLink
             key={link.label}
-            href={link.href}
+            href={link.href.startsWith("#") ? `/${link.href}` : link.href}
             label={link.label}
             className="flex min-h-11 items-center text-sm"
             onClick={() => setMenuOpen(false)}
@@ -63,7 +67,7 @@ function Navbar() {
         ))}
         <CustomButton
           variant="contained"
-          href="#contact"
+          href="/#contact"
           onClick={() => setMenuOpen(false)}
           className="!mt-2 !min-h-11 !rounded-none"
         >

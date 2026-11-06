@@ -162,7 +162,7 @@ export default function Footer() {
               {group.links.map((link) => (
                 <Link
                   key={link.label}
-                  href={link.href}
+                  href={link.href.startsWith("#") ? `/${link.href}` : link.href}
                   underline="none"
                   sx={{
                     width: "fit-content",

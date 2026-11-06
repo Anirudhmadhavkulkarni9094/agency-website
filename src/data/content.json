@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "title": "Website Design & Development Agency | Studio / Digital",
+    "title": "Website Design & Development Agency | Webcrafty.tech",
     "description": "Website design, redesign, and development for small businesses and startups. We also build landing pages, SaaS products, and custom software."
   },
   "navigation": {
-    "logo": "/Link.svg",
-    "logoAlt": "Studio / Digital",
+    "logo": "/webcrafty-logo.svg",
+    "logoAlt": "Webcrafty.tech",
     "links": [
       { "label": "SERVICES", "href": "#services" },
       { "label": "WORK", "href": "#work" },
@@ -17,7 +17,7 @@
     }
   },
   "footer": {
-    "brand": "STUDIO / DIGITAL",
+    "brand": "WEBCRAFTY.TECH",
     "headline": ["Good work.", "Built to last."],
     "inquiriesLabel": "INQUIRIES",
     "email": "hello@studio-digital.design",
@@ -63,7 +63,7 @@
     "services": ["STRATEGY", "DESIGN", "ENGINEERING", "ONGOING GROWTH"],
     "dashboard": {
       "browserDots": 3,
-      "address": "studio-digital://core-platform/v2.4",
+      "address": "webcrafty://core-platform/v2.4",
       "productionStatus": "SAMPLE DATA",
       "metrics": [
         { "label": "SYSTEM AVAILABILITY", "value": "99.98%", "status": "HEALTHY" },
@@ -209,50 +209,10 @@
   },
   "selectedWork": {
     "intro": {
-      "label": "SELECTED WORK / CONCEPT DEMONSTRATIONS",
+      "label": "SELECTED CLIENT WORK",
       "title": "Thoughtful work. Built for real businesses.",
-      "description": "Explore examples of the digital experiences and engineered systems we design and deliver for growth-stage businesses."
-    },
-    "labels": {
-      "viewProject": "DISCUSS A SIMILAR PROJECT",
-      "viewAll": "VIEW ALL WORK & INQUIRE"
-    },
-    "viewAllHref": "#contact",
-    "projects": [
-      {
-        "number": "01",
-        "category": "WEB DESIGN · DEVELOPMENT",
-        "type": "CONCEPT DEMO",
-        "name": "Verve Advisory",
-        "description": "A modern web platform for a boutique advisory consultancy. Designed to clarify premium positioning and drive conversion.",
-        "deliverable": "HIGH-CONVERSION CMS",
-        "image": "/images/projects/verve-advisory.jpg",
-        "imageAlt": "Verve Advisory website preview",
-        "href": "#contact"
-      },
-      {
-        "number": "02",
-        "category": "PRODUCT DESIGN · ENGINEERING",
-        "type": "CONCEPT DEMO",
-        "name": "PulseDesk SaaS",
-        "description": "An operations management application designed around rapid response workflows and clear customer visibility.",
-        "deliverable": "WEB APP & API LAYER",
-        "image": "/images/projects/pulsedesk.jpg",
-        "imageAlt": "PulseDesk SaaS dashboard preview",
-        "href": "#contact"
-      },
-      {
-        "number": "03",
-        "category": "CUSTOM SOFTWARE · AUTOMATION",
-        "type": "CONCEPT DEMO",
-        "name": "Kinetic Ops",
-        "description": "An integrated internal scheduling tool replacing fragmented spreadsheets with real-time operational dispatching.",
-        "deliverable": "CUSTOM ERP MODULE",
-        "image": "/images/projects/kinetic-ops.jpg",
-        "imageAlt": "Kinetic Ops scheduling software preview",
-        "href": "#contact"
-      }
-    ]
+      "description": "A closer look at digital products and business platforms, with project details grounded in verified information."
+    }
   },
   "partnership": {
     "intro": {

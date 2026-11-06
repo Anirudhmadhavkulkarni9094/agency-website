@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: siteUrl,
   title: {
     default: content.metadata.title,
-    template: "%s | Studio / Digital",
+    template: "%s | Webcrafty.tech",
   },
   description: content.metadata.description,
   alternates: {

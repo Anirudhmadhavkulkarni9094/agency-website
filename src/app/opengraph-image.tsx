@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Studio / Digital — Good work. Built to last.";
+export const alt = "Webcrafty.tech — Good work. Built to last.";
 export const size = {
   width: 1200,
   height: 630,
@@ -40,7 +40,7 @@ export default function OpenGraphImage() {
               backgroundColor: "#2451ff",
             }}
           />
-          STUDIO / DIGITAL
+          WEBCRAFTY.TECH
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
